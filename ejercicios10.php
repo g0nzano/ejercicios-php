@@ -4,22 +4,11 @@ if($_POST){
     $valorA=$_POST['valorA'];
     $valorB=$_POST['valorB'];
 
-    //suma
-    $suma=$valorA+$valorB;
-    //resta
-    $resta=$valorA-$valorB;
-    //division
-    $division=$valorA/$valorB;
-    //multiplicaion
-    $multiplicacion=$valorA*$valorB;
-    
-    
-    echo "<br/>".$suma;
-    echo "<br/>".$resta;
-    echo "<br/>".$division;
-    echo "<br/>".$multiplicacion;
-}
+    if ($valorA > $valorB){
 
+        echo"el valor de A es mayor que B";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,10 +16,10 @@ if($_POST){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operadores Aritmeticos</title>
+    <title>Relacionados relacionar</title>
 </head>
 <body>
-    <form action="ejercicios8.php" method="post">
+    <form action="ejercicios10.php" method="post">
         valor A:
         <input type="text" name="valorA" id="">
         <br/>
